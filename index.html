@@ -5,16 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Lukas Del Zotto's Portfolio</title>
+        <link rel="icon" href="images/icon.png"/>
 
         <link rel="stylesheet" href="css/bulma.css"/>
-        <link rel="icon" href="images/icon.png"/>
+        <script src="js/hamburger.js"></script>
     </head>
     <body>
-        <nav class="navbar" role="navigation" >
+        <!--navbar-->
+        <nav class="navbar is-dark" role="navigation" >
+            <!--logo and hamburger-->
             <div class="navbar-brand">
+                <!--logo-->
                 <a class="navbar-item" href="https://deldizzle.github.io/">
                     <img src="" alt="LDZ icon" width="112" height="28">
                 </a>
+                <!--hamburger-->
+                <a id="navbarBurger" class="navbar-burger" role="button" onclick="toggleHamburgerMenu();return false;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <!--menu-->
+            <div id="navbarMenu" class="navbar-menu">
+                <!--left-->
+                <div class="navbar-start">
+                </div>
+                <!--right-->
+                <div class="navbar-end">
+                    <a class="navbar-item" href="https://deldizzle.github.io/">
+                        Home
+                    </a>
+                    <a class="navbar-item">
+                        About
+                    </a>
+                    <a class="navbar-item">
+                        Portfolio
+                    </a>
+                </div>
             </div>
         </nav>
 
