@@ -12,15 +12,17 @@
     </head>
     <body>
         <!--navbar-->
-        <nav class="navbar is-dark" role="navigation" >
+        <nav class="navbar is-dark">
             <!--logo and hamburger-->
             <div class="navbar-brand">
                 <!--logo-->
                 <a class="navbar-item" href="https://deldizzle.github.io/">
-                    <img src="" alt="LDZ icon" width="112" height="28">
+                    <figure class="image is-32x32">
+                        <img src="" alt="LDZ icon">
+                    </figure>
                 </a>
                 <!--hamburger-->
-                <a id="navbarBurger" class="navbar-burger" role="button" onclick="toggleHamburgerMenu();return false;">
+                <a id="navbarBurger" class="navbar-burger" onclick="toggleHamburgerMenu();return false;">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -33,19 +35,85 @@
                 </div>
                 <!--right-->
                 <div class="navbar-end">
+                    <!--home button-->
                     <a class="navbar-item" href="https://deldizzle.github.io/">
                         Home
                     </a>
+                    <!--portfolio dropdown-->
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <!--portfolio button-->
+                        <a class="navbar-link">
+                            Portfolio
+                        </a>
+                        <!--dropdown items-->
+                        <div class="navbar-dropdown">
+                            <!--portfolio 1 button-->
+                            <a class="navbar-item">
+                                Carbon Converter
+                            </a>
+                            <!--portfolio 2 button-->
+                            <a class="navbar-item">
+                                Social Media Widget
+                            </a>
+                            <!--portfolio 3 button-->
+                            <a class="navbar-item">
+                                Blunderbuss
+                            </a>
+                            <hr class="navbar-divider">
+                            <!--portfolio more button-->
+                            <a class="navbar-item">
+                                More
+                            </a>
+                        </div>
+                    </div>
+                    <!--about button-->
                     <a class="navbar-item">
                         About
-                    </a>
-                    <a class="navbar-item">
-                        Portfolio
                     </a>
                 </div>
             </div>
         </nav>
 
-        <p>Welcome to my (work in progress) website</p>
+        <!--hero-->
+        <section class="hero is-large">
+            <div class="hero-body">
+                <h1 class="title">LDZ's Portfolio</h1>
+                <h2 class="subtitle">Welcome to my (work in progress) website</h2>
+            </div>
+        </section>
+        
+
+        <!--footer-->
+        <footer class="footer">
+            <!--links-->
+            <div class="content has-text-centered">
+                <!--GitHub link-->
+                <a href="https://github.com/DelDizzle/">
+                    <figure class="image is-64x64 is-inline-block">
+                        <img alt="GitHub Logo" src="images/GitHub-Logo-64px.png">
+                    </figure>
+                </a>
+                <!--LinkedIn link-->
+                <a href="https://www.linkedin.com/in/lukas-del-zotto-59494b1a9/">
+                    <figure class="image is-64x64 is-inline-block">
+                        <img alt="LinkedIn Logo" src="images/LinkedIn-Logo-635pxBy540px.png">
+                    </figure>
+                </a>
+            </div>
+            <hr>
+            <!--license-->
+            <div class="content has-text-left">
+                <p>
+                    Copyright (C) 2021 Lukas Del Zotto
+                    <br>
+                    This program is free software: you can redistribute it and/or modify it under the terms
+                    of the <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License</a>
+                    as published by the Free Software Foundation, either version 3 of the License, or any later version.
+                    <hr>
+                    <!--date-->
+                    <strong>Created:</strong> 03/05/21 <strong>Updated:</strong> 03/12/21
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
